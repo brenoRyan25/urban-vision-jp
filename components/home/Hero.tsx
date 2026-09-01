@@ -3,6 +3,7 @@ import Link from "next/link";
 import { buttonClasses } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { store } from "@/config/store";
+import { withBasePath } from "@/lib/utils";
 
 /**
  * Hero em campanha, não em vitrine: a foto é uma camada de fundo em
@@ -18,7 +19,7 @@ export function Hero({ heroImage }: { heroImage: string }) {
   return (
     <section className="relative flex min-h-[85dvh] items-end overflow-hidden bg-carbon text-titanium md:min-h-[90dvh]">
       <Image
-        src={heroImage}
+        src={withBasePath(heroImage)}
         alt="Óculos estilo Juliette da Urban Vision JP"
         fill
         sizes="100vw"

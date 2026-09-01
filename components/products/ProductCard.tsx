@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/Badge";
 import { AddToCartButton } from "./AddToCartButton";
 import { ProductPrice } from "./ProductPrice";
 import { getDiscountPercent, isOffer } from "@/lib/products";
-import { cn } from "@/lib/utils";
+import { cn, withBasePath } from "@/lib/utils";
 import { CATEGORIES, LENS_COLORS, type Product } from "@/types/product";
 
 /**
@@ -43,7 +43,7 @@ export function ProductCard({
       <div className="relative aspect-4/5 overflow-hidden bg-steel/30">
         <Link href={`/produto/${product.slug}`} className="absolute inset-0 block">
           <Image
-            src={product.image}
+            src={withBasePath(product.image)}
             alt={`${product.name} — óculos ${lens?.label.toLowerCase() ?? ""} da Urban Vision JP`}
             fill
             sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"

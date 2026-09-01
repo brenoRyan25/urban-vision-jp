@@ -24,3 +24,15 @@ export function normalizeKey(value: string): string {
     .trim()
     .replace(/\s+/g, " ");
 }
+
+/**
+ * next/image com `unoptimized: true` (obrigatório em output: "export")
+ * não aplica o basePath sozinho no `src` — só os arquivos internos do
+ * Next e o <Link> fazem isso automaticamente. Toda imagem cujo caminho
+ * vem de dados (não de uma rota do próprio app) precisa passar por
+ * aqui, senão quebra no GitHub Pages (que serve a partir de um
+ * subcaminho) mesmo funcionando local.
+ */
+export function withBasePath(path: string): string {
+  return `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${path}`;
+}

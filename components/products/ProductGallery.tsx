@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { cn } from "@/lib/utils";
+import { cn, withBasePath } from "@/lib/utils";
 
 /**
  * Client só por causa da troca de foto. Com uma imagem só, nem renderiza
@@ -23,7 +23,7 @@ export function ProductGallery({
       <div className="relative aspect-4/5 overflow-hidden rounded-surface bg-graphite">
         {current && (
           <Image
-            src={current}
+            src={withBasePath(current)}
             alt={alt}
             fill
             sizes="(min-width: 1024px) 50vw, 100vw"
@@ -49,7 +49,7 @@ export function ProductGallery({
                     : "border-steel hover:border-titanium/50",
                 )}
               >
-                <Image src={src} alt="" fill sizes="80px" className="object-cover" />
+                <Image src={withBasePath(src)} alt="" fill sizes="80px" className="object-cover" />
               </button>
             </li>
           ))}

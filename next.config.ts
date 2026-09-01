@@ -12,6 +12,12 @@ const nextConfig: NextConfig = {
   output: "export",
   basePath,
   trailingSlash: true,
+  // Deixa o basePath legível em runtime (server e client) para
+  // lib/utils.ts#withBasePath — next/image com unoptimized:true não
+  // prefixa o `src` sozinho, diferente de <Link> e dos chunks do Next.
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
   images: {
     // Sem servidor, não existe otimização de imagem sob demanda — as
     // fotos são servidas como estão em /public (já .webp).

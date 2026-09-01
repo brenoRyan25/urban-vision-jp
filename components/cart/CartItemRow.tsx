@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Badge } from "@/components/ui/Badge";
 import { formatCurrency } from "@/lib/format";
+import { withBasePath } from "@/lib/utils";
 import { useCart } from "@/store/cart";
 import type { ResolvedCartItem } from "@/types/cart";
 
@@ -26,7 +27,7 @@ export function CartItemRow({
         onClick={onNavigate}
         className="relative size-20 shrink-0 overflow-hidden rounded-surface bg-steel/40"
       >
-        <Image src={item.image} alt="" fill sizes="80px" className="object-cover" />
+        <Image src={withBasePath(item.image)} alt="" fill sizes="80px" className="object-cover" />
       </Link>
 
       <div className="flex min-w-0 flex-1 flex-col gap-2">
