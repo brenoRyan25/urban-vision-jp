@@ -38,8 +38,6 @@ jobs:
           NEXT_PUBLIC_WHATSAPP_NUMBER: ${{ secrets.NEXT_PUBLIC_WHATSAPP_NUMBER }}
 
       - name: Add .nojekyll
-        # Sem isso o GitHub Pages ignora a pasta _next/ do Next.js
-        # (nome começando com _ é tratado como conteúdo do Jekyll).
         run: touch out/.nojekyll
 
       - name: Setup Pages
