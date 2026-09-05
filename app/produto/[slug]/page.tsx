@@ -194,10 +194,6 @@ export default async function ProdutoPage({
                 <p className="type-body mt-3 text-smoke">{product.details}</p>
               </div>
             )}
-
-            <p className="mt-8 text-sm text-smoke">
-              Compra sem cadastro — só nome e telefone no checkout.
-            </p>
           </div>
         </div>
       </Container>

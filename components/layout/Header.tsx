@@ -1,12 +1,13 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { CartDrawer } from "@/components/cart/CartDrawer";
 import { Container } from "@/components/ui/Container";
 import { store } from "@/config/store";
-import { cn } from "@/lib/utils";
+import { cn, withBasePath } from "@/lib/utils";
 import { selectTotalQuantity, useCart } from "@/store/cart";
 import type { Product } from "@/types/product";
 
@@ -39,10 +40,19 @@ export function Header({ products }: { products: Product[] }) {
           <div className="flex h-16 items-center justify-between gap-4 md:h-20">
             <Link
               href="/"
-              className="type-title text-lg tracking-tight md:text-xl"
+              className="flex items-center gap-2.5"
               aria-label={`${store.name} — início`}
             >
-              URBAN VISION <span className="text-smoke">JP</span>
+              <Image
+                src={withBasePath("/logo-uban-vision.jpg")}
+                alt=""
+                width={40}
+                height={40}
+                className="size-9 rounded-full md:size-10"
+              />
+              <span className="type-title hidden text-lg tracking-tight sm:inline md:text-xl">
+                URBAN VISION <span className="text-smoke">JP</span>
+              </span>
             </Link>
 
             <nav aria-label="Principal" className="hidden md:block">

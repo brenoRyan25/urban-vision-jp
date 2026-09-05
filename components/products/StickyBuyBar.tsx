@@ -61,7 +61,7 @@ export function StickyBuyBar({
       /* Escondido de verdade quando fora da tela: senão continua
          recebendo foco de teclado atrás do rodapé. */
       aria-hidden={!visible}
-      {...(!visible && { inert: "" as never })}
+      inert={!visible}
     >
       <div className="flex items-center gap-3">
         <div className="min-w-0 flex-1">

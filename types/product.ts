@@ -4,7 +4,7 @@
  * em silêncio; assim o TypeScript pega no ato.
  */
 export const CATEGORIES = [
-  { slug: "juliette", label: "Juliette" },
+  { slug: "juliet", label: "Juliet" },
   { slug: "esportivo", label: "Esportivos" },
   { slug: "classico", label: "Clássicos" },
 ] as const;
@@ -13,7 +13,7 @@ export type CategorySlug = (typeof CATEGORIES)[number]["slug"];
 export type Category = (typeof CATEGORIES)[number];
 
 /**
- * Cor da lente. Numa loja onde quase tudo é Juliette, esta é a decisão
+ * Cor da lente. Numa loja onde quase tudo é juliet, esta é a decisão
  * real do cliente — muito mais do que a categoria. O filtro de cor e o
  * de categoria são derivados dos dados: cada um só aparece quando há
  * mais de um valor em uso. Ver getFacets() em lib/products.ts.
@@ -35,7 +35,7 @@ export type LensColor = (typeof LENS_COLORS)[number];
 export interface Product {
   /** Único e estável. Nunca reaproveitar o id de um produto removido. */
   id: string;
-  /** Usado na URL: /produto/juliette-black */
+  /** Usado na URL: /produto/juliet-black */
   slug: string;
   name: string;
   /** Curta — vai no card e na meta description. Máx. ~140 caracteres. */

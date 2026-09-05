@@ -5,21 +5,19 @@ import { Container } from "@/components/ui/Container";
 import { store } from "@/config/store";
 import { withBasePath } from "@/lib/utils";
 
+const HERO_IMAGE = "/hero-street.webp";
+
 /**
  * Hero em campanha, não em vitrine: a foto é uma camada de fundo em
  * tela cheia, com um véu de gradiente para o texto ficar legível por
  * cima — não uma caixa de 50% ao lado do texto. Isso é o que dá a
  * primeira tela a sensação de anúncio de marca, e não de template.
- *
- * >>> SUBSTITUIR a imagem por uma foto real de campanha (retrato/still
- *     em ambiente urbano). O hero é 80% imagem: nenhuma decisão de
- *     código compensa foto ruim numa loja de óculos.
  */
-export function Hero({ heroImage }: { heroImage: string }) {
+export function Hero() {
   return (
     <section className="relative flex min-h-[85dvh] items-end overflow-hidden bg-carbon text-titanium md:min-h-[90dvh]">
       <Image
-        src={withBasePath(heroImage)}
+        src={withBasePath(HERO_IMAGE)}
         alt="Óculos estilo Juliette da Urban Vision JP"
         fill
         sizes="100vw"
@@ -43,7 +41,7 @@ export function Hero({ heroImage }: { heroImage: string }) {
         <div className="iridescent-line mt-6 h-px w-40" />
 
         <p className="type-body mt-6 max-w-md text-lg text-titanium/70 md:text-xl">
-          Lentes Juliette, atitude urbana. Entrega em {store.city} e região —
+          Lentes Juliette, atitude urbana. Entrega em {store.city} e região,
           retirada também disponível.
         </p>
 

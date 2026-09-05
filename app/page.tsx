@@ -5,23 +5,19 @@ import { ProductSection } from "@/components/home/ProductSection";
 import { TrustBar } from "@/components/home/TrustBar";
 import { buttonClasses } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
-import { getFeaturedProducts, getOfferProducts, getProducts } from "@/lib/products";
+import { getFeaturedProducts, getOfferProducts } from "@/lib/products";
 import { store } from "@/config/store";
 
 /** Homepage estática: nenhuma parte depende de requisição. */
 export default async function Home() {
-  const [offers, featured, all] = await Promise.all([
+  const [offers, featured] = await Promise.all([
     getOfferProducts(4),
     getFeaturedProducts(4),
-    getProducts(),
   ]);
-
-  // >>> SUBSTITUIR pela foto principal da loja.
-  const heroImage = all[0]?.image ?? "/products/juliette-black.webp";
 
   return (
     <main>
-      <Hero heroImage={heroImage} />
+      <Hero />
 
       <Container className="py-8">
         <TrustBar />
