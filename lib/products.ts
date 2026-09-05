@@ -152,10 +152,10 @@ export interface Facet<T> {
  * Filtros derivados dos dados, não fixos no componente.
  *
  * Cada faceta só é devolvida se tiver produto, e a UI esconde a linha
- * inteira quando sobra uma opção só. Numa loja onde tudo é Juliette, o
- * filtro de categoria simplesmente não aparece — filtro com uma opção
- * só é fricção pura. Se depois entrarem esportivos, ele aparece
- * sozinho, sem alterar código.
+ * inteira quando sobra uma opção só. Enquanto o estoque tiver uma única
+ * linha, o filtro de categoria nem aparece — filtro com uma opção só é
+ * fricção pura. Assim que entrar a segunda linha, ele aparece sozinho,
+ * sem alterar código.
  */
 export async function getFacets(): Promise<{
   categories: Facet<Category>[];

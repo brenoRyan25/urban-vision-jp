@@ -186,13 +186,13 @@ porque lê `searchParams` — filtro e ordenação são resolvidos no servidor.
 Derivados dos dados, em `getFacets()`. Cada linha de filtro só aparece se
 houver mais de uma opção em uso:
 
-- Se todo o estoque for Juliette, a linha de **categoria** some sozinha.
+- Se todo o estoque for de uma linha só, a linha de **categoria** some sozinha.
 - Se só houver uma cor de lente, a linha de **cor** some sozinha.
 - Se nenhum produto tiver `originalPrice`, o chip **Ofertas** some.
 
 Você mexe em `data/products.ts` e a interface se ajusta. Nada de código.
 
-Os filtros vivem na URL (`/catalogo?categoria=juliette&lente=ruby&ordem=menor-preco`),
+Os filtros vivem na URL (`/catalogo?categoria=juliet&lente=ruby&ordem=menor-preco`),
 então o link é compartilhável, o botão voltar funciona e o filtro é aplicado
 antes da hidratação.
 
@@ -210,8 +210,8 @@ antes da hidratação.
 
 - `/catalogo` — grade, filtros, ordenação, estado vazio
 - `/catalogo?lente=ruby` — filtro por cor
-- `/produto/juliette-black` — galeria com 2 fotos, barra fixa no celular
-- `/produto/juliette-white` — estado esgotado
+- `/produto/juliet-ruby` — galeria com 3 fotos, barra fixa no celular
+- `/produto/half-jacket` — outra linha, fora da categoria Juliet
 - `/design-system` — referência visual
 
 A home ainda redireciona para o catálogo. Ela é construída na Fase 3.

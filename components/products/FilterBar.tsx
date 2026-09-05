@@ -53,7 +53,8 @@ function Chip({
 /**
  * Cada linha só aparece se houver mais de uma opção.
  * Filtro com uma opção só é fricção: ocupa espaço e não filtra nada.
- * Numa loja onde tudo é Juliette, a linha de categoria some sozinha.
+ * Enquanto o estoque tiver uma única linha, a linha de categoria some
+ * sozinha.
  */
 export function FilterBar({
   categories,

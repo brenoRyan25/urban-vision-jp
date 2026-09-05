@@ -129,7 +129,7 @@ export default function DesignSystemPage() {
             </div>
             <div>
               <p className="mb-2 text-xs text-smoke">title · nome de produto</p>
-              <p className="type-title text-2xl">Juliette Ruby Iridium</p>
+              <p className="type-title text-2xl">Juliet Ruby Iridium</p>
             </div>
             <div>
               <p className="mb-2 text-xs text-smoke">
@@ -180,7 +180,7 @@ export default function DesignSystemPage() {
             <Badge tone="offer">-17%</Badge>
             <Badge tone="featured">Destaque</Badge>
             <Badge tone="soldOut">Esgotado</Badge>
-            <Badge tone="neutral">Juliette</Badge>
+            <Badge tone="neutral">Juliet</Badge>
           </div>
 
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

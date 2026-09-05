@@ -8,7 +8,7 @@ import { store } from "@/config/store";
 
 export const metadata: Metadata = {
   title: "Catálogo",
-  description: `Todos os modelos da ${store.name}. Óculos estilo Juliette com entrega em ${store.city} e região metropolitana.`,
+  description: `Todos os modelos da ${store.name}. Óculos de sol com entrega em ${store.city} e região metropolitana.`,
   alternates: { canonical: "/catalogo" },
 };
 
@@ -26,8 +26,8 @@ export default async function CatalogoPage() {
           <h1 className="type-display text-display-md">Catálogo</h1>
           <p className="type-body mt-4 text-titanium/70">
             {facets.categories.length > 1
-              ? "Juliette, esportivos e clássicos. Todos com proteção UV400."
-              : "Toda a linha Juliette, com proteção UV400."}
+              ? "Vários modelos, todos com proteção UV400."
+              : "Toda a coleção, com proteção UV400."}
           </p>
         </Container>
       </div>

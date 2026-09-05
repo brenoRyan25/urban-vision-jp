@@ -10,7 +10,7 @@ export const store = {
   shortName: "UVJP",
   tagline: "Óculos que mudam a leitura da rua.",
   description:
-    "Óculos estilo Juliet em João Pessoa. Modelos selecionados, entrega na região metropolitana e pedido direto pelo WhatsApp.",
+    "Óculos de sol em João Pessoa: Juliet, Half Jacket, Penny e outras linhas. Modelos selecionados, entrega na região metropolitana e pedido direto pelo WhatsApp.",
 
   city: "João Pessoa",
   state: "PB",

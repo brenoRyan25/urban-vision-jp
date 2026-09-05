@@ -18,7 +18,7 @@ export function Hero() {
     <section className="relative flex min-h-[85dvh] items-end overflow-hidden bg-carbon text-titanium md:min-h-[90dvh]">
       <Image
         src={withBasePath(HERO_IMAGE)}
-        alt="Óculos estilo Juliette da Urban Vision JP"
+        alt="Óculos de sol da Urban Vision JP"
         fill
         sizes="100vw"
         priority
@@ -41,7 +41,7 @@ export function Hero() {
         <div className="iridescent-line mt-6 h-px w-40" />
 
         <p className="type-body mt-6 max-w-md text-lg text-titanium/70 md:text-xl">
-          Lentes Juliet, atitude urbana. Entrega em {store.city} e região,
+          Juliet, Half Jacket, Penny e mais. Entrega em {store.city} e região,
           retirada também disponível.
         </p>
 

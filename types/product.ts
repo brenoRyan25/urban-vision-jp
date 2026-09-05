@@ -5,22 +5,28 @@
  */
 export const CATEGORIES = [
   { slug: "juliet", label: "Juliet" },
-  { slug: "esportivo", label: "Esportivos" },
-  { slug: "classico", label: "Clássicos" },
+  { slug: "half-jacket", label: "Half Jacket" },
+  { slug: "penny", label: "Penny" },
+  { slug: "gascan", label: "Gascan" },
+  { slug: "radar-ev", label: "Radar EV" },
+  { slug: "permian", label: "Permian" },
+  { slug: "plantaris", label: "Plantaris" },
+  { slug: "plantaris-travis-scott", label: "Plantaris Travis Scott" },
 ] as const;
 
 export type CategorySlug = (typeof CATEGORIES)[number]["slug"];
 export type Category = (typeof CATEGORIES)[number];
 
 /**
- * Cor da lente. Numa loja onde quase tudo é juliet, esta é a decisão
- * real do cliente — muito mais do que a categoria. O filtro de cor e o
- * de categoria são derivados dos dados: cada um só aparece quando há
- * mais de um valor em uso. Ver getFacets() em lib/products.ts.
+ * Cor da lente é uma segunda decisão do cliente, além do modelo. O
+ * filtro de cor e o de categoria são derivados dos dados: cada um só
+ * aparece quando há mais de um valor em uso. Ver getFacets() em
+ * lib/products.ts.
  */
 export const LENS_COLORS = [
   { slug: "preta", label: "Preta", swatch: "#2B2F33" },
   { slug: "ruby", label: "Ruby", swatch: "#96283C" },
+  { slug: "marrom", label: "Marrom", swatch: "#7A4A23" },
   { slug: "ice", label: "Ice", swatch: "#78C8DC" },
   { slug: "violeta", label: "Violeta", swatch: "#6C4CF1" },
   { slug: "dourada", label: "Dourada", swatch: "#B4965A" },
