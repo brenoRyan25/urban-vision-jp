@@ -41,7 +41,7 @@ export function Hero() {
         <div className="iridescent-line mt-6 h-px w-40" />
 
         <p className="type-body mt-6 max-w-md text-lg text-titanium/70 md:text-xl">
-          Lentes Juliette, atitude urbana. Entrega em {store.city} e região,
+          Lentes Juliet, atitude urbana. Entrega em {store.city} e região,
           retirada também disponível.
         </p>
 
