@@ -38,7 +38,7 @@ export const products: Product[] = [
     description:
       "Máscara esportiva branca com lente preta polarizada. Estrutura leve para quem não para quieto.",
     details:
-      "Armação em nylon branco fosco com hastes emborrachadas em preto, feita pra ficar no rosto durante o treino sem escorregar. Lente preta polarizada com proteção UV400, curvatura ampla que dá campo de visão livre nas laterais. Estrutura flexível e resistente a impacto leve. Acompanha estojo rígido e flanela.",
+      "Armação em nylon branco fosco com hastes emborrachadas em preto, feita pra ficar no rosto durante o treino sem escorregar. Lente preta polarizada com proteção UV400, curvatura ampla que dá campo de visão livre nas laterais. Estrutura flexível e resistente a impacto leve. Acompanha Bag Custom.",
     price: 89.99,
     image: "/products/half-jacket.webp",
     images: [
@@ -59,7 +59,7 @@ export const products: Product[] = [
     description:
       "Armação metálica com lente ruby espelhada. A peça mais chamativa da linha.",
     details:
-      "Estrutura em metal com acabamento envelhecido e lente ruby espelhada, que reflete em vermelho profundo e escurece a visão de fora sem escurecer a de dentro. Encaixe curto e justo, pensado pra quem gosta de um estilo mais retrô e ousado. Proteção UV400. Acompanha estojo rígido e flanela.",
+      "Estrutura em metal com acabamento envelhecido e lente ruby espelhada, que reflete em vermelho profundo e escurece a visão de fora sem escurecer a de dentro. Encaixe curto e justo, pensado pra quem gosta de um estilo mais retrô e ousado. Proteção UV400. Acompanha Bag Custom.",
     price: 99.99,
     image: "/products/juliet-ruby.webp",
     images: [
@@ -80,7 +80,7 @@ export const products: Product[] = [
     description:
       "Armação em metal preto fosco com detalhes em vermelho e lente preta. A combinação mais pedida da linha Juliet.",
     details:
-      "Estrutura em metal preto fosco com acabamento em borracha vermelha nas plaquetas de nariz e ponta das hastes — o colorway Ducati da linha. Lente preta com proteção UV400 e encaixe curto, no estilo clássico X-Metal. Acompanha estojo rígido e flanela.",
+      "Estrutura em metal preto fosco com acabamento em borracha vermelha nas plaquetas de nariz e ponta das hastes — o colorway Ducati da linha. Lente preta com proteção UV400 e encaixe curto, no estilo clássico X-Metal. Acompanha Bag Custom.",
     price: 99.99,
     image: "/products/juliet-ducati.webp",
     images: ["/products/juliet-ducati.webp"],
@@ -97,7 +97,7 @@ export const products: Product[] = [
     description:
       "Armação preta brilhante com lente marrom. Visual mais discreto, sem perder o esporte.",
     details:
-      "Estrutura em nylon preto brilhante com hastes emborrachadas e lente marrom, que segura bem em dias de luz mais baixa sem escurecer demais a visão. Proteção UV400. Acompanha estojo rígido e flanela.",
+      "Estrutura em nylon preto brilhante com hastes emborrachadas e lente marrom, que segura bem em dias de luz mais baixa sem escurecer demais a visão. Proteção UV400. Acompanha Bag Custom.",
     price: 99.9,
     image: "/products/permian-brown.webp",
     images: ["/products/permian-brown.webp"],
@@ -114,7 +114,7 @@ export const products: Product[] = [
     description:
       "Armação compacta em metal cor cobre com lente ruby espelhada. O tamanho menor da linha, mesmo acabamento X-Metal.",
     details:
-      "Estrutura em metal com acabamento cobre (colorway Cooper) e lente ruby espelhada. Encaixe mais compacto que a Juliet, indicado pra quem acha a Juliet grande no rosto. Proteção UV400. Acompanha estojo rígido e flanela.",
+      "Estrutura em metal com acabamento cobre (colorway Cooper) e lente ruby espelhada. Encaixe mais compacto que a Juliet, indicado pra quem acha a Juliet grande no rosto. Proteção UV400. Acompanha Bag Custom.",
     price: 99.9,
     image: "/products/penny-cooper.webp",
     images: ["/products/penny-cooper.webp"],
@@ -131,7 +131,7 @@ export const products: Product[] = [
     description:
       "Juliet clássica em preto com blinders laterais. Bloqueia a luz que entra pelas bordas da lente.",
     details:
-      "Mesma estrutura X-Metal preta da Juliet, com os side blinders encaixados — as abas laterais que fecham a entrada de luz pelas bordas da lente. Lente preta com proteção UV400. Acompanha estojo rígido e flanela.",
+      "Mesma estrutura X-Metal preta da Juliet, com os side blinders encaixados — as abas laterais que fecham a entrada de luz pelas bordas da lente. Lente preta com proteção UV400. Acompanha Bag Custom.",
     price: 169.99,
     image: "/products/juliet-side-blinders.webp",
     images: ["/products/juliet-side-blinders.webp"],
